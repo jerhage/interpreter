@@ -1,3 +1,3 @@
-module github.com/jerhage/interpreter
+module interpreter
 
 go 1.20
