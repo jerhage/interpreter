@@ -28,6 +28,8 @@ const (
     SLASH = "/"
     GT = ">"
     LT = "<"
+    EQ = "=="
+    NOT_EQ = "!="
 
     // Delimiters
     COMMA = ","
@@ -41,12 +43,24 @@ const (
     // Keywords
     FUNCTION = "FUNCTION"
     LET = "LET"
+    IF = "IF"
+    ELSE = "ELSE"
+    RETURN = "RETURN"
+    TRUE = "TRUE"
+    FALSE = "FALSE"
+
 )
 
 // Map of keywords for the programming language
 var keywords = map[string]TokenType {
     "fn": FUNCTION,
     "let": LET,
+    "if": IF,
+    "else": ELSE,
+    "return": RETURN,
+    "true": TRUE,
+    "false": FALSE,
+
 }
 
 // Check if identifier is a keyword, else return as IDENT
